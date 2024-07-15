@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <img src="./icons8-apple.svg" alt="apple-icon" id="header-img" />
         <nav id="nav-bar">
-            <a href="" class="nav-link">Introduction</a>
-            <a href="" class="nav-link">Link2</a>
-            <a href="" class="nav-link">Link3</a>
-        </nav>
+          <img src="./icons8-apple.svg" alt="apple-icon" id="header-img" />
+        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#video" class="nav-link">Trailer</a>
+        <a href="#form" class="nav-link">Form</a>
+      </nav>
     </header>
 
-    <!-- Product Video -->
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/XHTrLYShBRQ?si=AWgNmg1mhf9yz8A4"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-</body>
+    <!--Introduction-->
+    <div id="introduction">
+        <h1>Introduction</h1>
+        <p>The innovative new design features back glass that has color infused throughout the material. A custom dual ion-exchange process for the glass, and an aerospace-grade aluminum enclosure, help make iPhone 15 incredibly durable</p>
+    </div>
 
+    <!-- Product Video -->
+         <iframe
+         id="video"
+         width="560"
+         height="315"
+         src="https://www.youtube.com/embed/XHTrLYShBRQ?si=AWgNmg1mhf9yz8A4"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin"
+         allowfullscreen
+         >
+        </iframe>
+
+    </div>
+    <!--Form Element-->
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h1>Email-newsletter</h1>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+      />
+      <input
+        type="submit"
+        value="submit"
+        id="submit"
+      />
+    </form>
+  </body>
 </html>
